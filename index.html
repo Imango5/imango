@@ -3,88 +3,79 @@
  <head>
     <meta charset="UTF-8">
     <title>My site</title>
+    <link rel="stylesheet" href="style.css">
  </head>
-    <body>
-      <table>
-          <tr>
-              <td>
-                <img src="1.jpg" alt="фото"/>
-                </td>
-                <td>
-                 <h1><strong>Сулымин Александр</strong></h1>
-                 <p><em>Я тренер по ММА</em></p>
-                <p>Веду тренировки в городе Ростов-на-Дону</p>
-             </td>
-          </tr>
-        </table>
+ <body>
+<div class="container">
+    <div class="info" >
+        <img class="icon" src="1.jpg" alt="Иконка"/>
 
-                     <hr>
+        <div class="info-text">
+            <h1>Сулымин Александр</h1>
+            <p>Я тренер по ММА</p>
+            <p>Веду тренировки в городе Ростов-на-Дону</p>
 
-        <h2>Мои социальные сети</h2>
-             <li>
-               <a href="http://instagram.com/imango555" target="_blank">Instagram</a>
-             </li>
-            <li>
-               <a
-                href="http://vk.com/sulymin"
-               target="_blank">Vkontakte</a>
-             </li>
+            <h4>Мои социальные сети:</h4>
 
+            <a href="http://instagram.com/imango555" target="_blank">Instagram</a>
+                |
+            <a href="http://vk.com/sulymin" target="_blank">Vkontakte</a>
+        </div>
+
+    </div>
+    <div class="card bg-1">
         <h2>Мои увлечения</h2>
-            <ol>
+            <ol class="list">
                 <li>Начинающий программист</li>
                 <li>ММА</li>
                 <li>Спортивный судья</li>
             </ol>
-
-
-
+    </div>
+    <div class="card bg-2">
+        <h2>Опыт Работы</h2>
+        <table class="tab1">
+            <tr>
+                <td>MMA</td>
+                <td>Jude</td>
+                <td>2013-2022</td>
+            </tr>
+             <tr>
+                <td>MMA</td>
+                <td>Jude</td>
+                <td>2013-2022</td>
+             </tr>
+        </table>
+    </div>
+    <div class="card bg-3">
         <h2>Youtube видео</h2>
-        <a href="https://youtu.be/W9cmlnQL25Y"> Прогиб </a>
-
-
-
-             <h2>Опыт Работы</h2>
-
-        <table border="2">
-                 <tr>
-                   <th>компания</th>
-                   <th>должность</th>
-                   <th>год</th>
-                 </tr>
-                <tr>
-                    <td>MMA</td>
-                    <td>Jude</td>
-                    <td>2013-2022</td>
-                </tr>
-                <tr>
-                    <td>MMA</td>
-                    <td>Jude</td>
-                    <td>2013-2022</td>
-                </tr>
-         </table>
-
-         <h2>Связаться со мной</h2>
-
-             <form action="/">
-               <label for="name">Ваше имя:</label>
-                <input type="text" id="name"
-                placeholder="Введите имя:">
-
-                    <br>
-
+         <ul class="ssilka">
+            <li>
+                <a href="https://youtu.be/W9cmlnQL25Y"> Примерный бросок с прогиба*) </a>
+            </li>
+        </ul>
+    </div>
+    <div class="card bg-4">
+        <h2>Связаться со мной</h2>
+        <form action="/">
+                <div class="form">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name"
+                     placeholder="Введите имя:">
+                </div>
+            <div class="form">
                 <label for="text">Ваш Email:</label>
                 <input type="email" id="email"
-                placeholder="Введите Email:">
-
-                    <br>
+                 placeholder="Введите Email:">
 
                 <label for="text">Ваше сообщение:</label>
-
-                    <br>
-
+             </div>
+            <div class="form">
                 <textarea name="Ваши пожелания" id="text" cols="30" rows="2" cols="15"></textarea>
-            </form>
-
-    </body>
+             </div>
+             <input type="submit" class="btn" value="Отправить!!!">
+        </form>
+    </div>
+</div>
+     <div style="margin-bottom: 500px;"></div>
+ </body>
 </html>
