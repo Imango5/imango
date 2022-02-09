@@ -1,0 +1,13 @@
+body{
+    font-family:tahoma;
+    line-height: 3x;
+    font-size:1.8;
+    color: black
+}
+
+.title {
+    font-size: 45px;
+}
+.table {
+    color: aqua;
+}
